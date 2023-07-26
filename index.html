@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jaya Portfolio</title>
+    <!-- ****** font awsome cdn link ***** -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- ****** css link ***** -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div id="menubar" onclick="onClick()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="header">
+        <a href="#" class="logo">Jaya S</a>
+
+        <nav class="navbar">
+          <ul>
+            <li><a href="#home" class="navlinks">Home</a></li>
+            <li><a href="#about" class="navlinks">About Me</a></li>
+            <li><a href="#projects" class="navlinks">Projects</a></li>
+            <li><a href="#contact" class="navlinks">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="contact-links">
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#"><i class="fa-solid fa-envelope"></i></a>
+          <a href="#" class="fab fa-github"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+        </div>
+      </div>
+      <div class="main-content">
+        <!-- ****** homepage start ****** -->
+        <div class="homepage" id="home">
+          <div class="homepage-intro">
+            <p class="hey">Hey there</p>
+            <h3 class="name">I am <span>Jaya Surbiryala</span></h3>
+            <p class="text1">I am A Front End Developer with passion</p>
+            <p class="text2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+              expedita mollitia quaerat dolores eaque, molestias quibusdam
+              assumenda excepturi et. Nesciunt!
+            </p>
+            <a href="#about"><button class="btn">More About me</button></a>
+          </div>
+          <div class="homepage-img">
+            <img src="./images/Myimage.png" alt="My Image" />
+          </div>
+        </div>
+        <!-- ****** homepage end ****** -->
+
+        <!-- ****** aboutme page start ****** -->
+        <div class="aboutpage" id="about">
+          <h2 class="heading">About Me</h2>
+          <div class="about-conatiner">
+            <div class="about-img">
+              <img src="./images/Myimage.png" alt="My Image" />
+            </div>
+            <div class="about-intro">
+              <div class="row-1">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Nulla earum voluptatum iste nostrum qui suscipit!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ducimus exercitationem quae eius? Cumque repudiandae eos,
+                  distinctio laboriosam quos repellat! Optio?
+                </p>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Nobis doloremque eligendi consequuntur veritatis blanditiis
+                  placeat dolore voluptates quos autem illo?
+                </p>
+              </div>
+              <div class="row2 tab-titles">
+                <p class="tab-links active-link" onclick="openTab('skills')">
+                  Skills
+                </p>
+                <p class="tab-links" onclick="openTab('experience')">
+                  Experience
+                </p>
+                <p class="tab-links" onclick="openTab('education')">
+                  Education
+                </p>
+              </div>
+
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li>
+                    <span>Front End Technologies</span> <br />Html, CSS,
+                    Javscript, React
+                  </li>
+                  <li>
+                    <span>Back End Technologies</span> <br />MySql, node js,
+                    MongoDB
+                  </li>
+                  <li><span>Programming Technologies</span> <br />C, Java</li>
+                  <li>
+                    <span>IT Skills</span> <br />Citrix Workspace, Footprints,
+                    Active Directory (AD), and System Center Configuration
+                    Management (SCCM)
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span> Sep. 2019- Oct. 2020 </span><br />IT - Konsulent
+                    (Ringevikar), Strand Kommune, Norway
+                  </li>
+                  <li>
+                    <span>Juli. 2019- Sep. 2019 </span><br />IT – Konsulent
+                    (vikar), Strand Kommune, Norway
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>2012-2016</span><br />
+                    Informatikk Bachelor, JNTU Hyderabad
+                  </li>
+                  <li>
+                    <span>2010-2012</span><br />
+                    VGS NRI junior college, Hyderabad
+                  </li>
+                </ul>
+              </div>
+              <a href="#"><button class="btn">Download CV</button></a>
+              <a href="#projects"><button class="btn">Projects</button></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ****** Aboutme page end ****** -->
+
+        <!-- ****** projects page end ****** -->
+
+        <div class="projectspage" id="projects">
+          <h2 class="heading">Projects</h2>
+          <div class="projectlist-container">
+            <div class="projecttab-titles">
+              <p
+                class="projecttab-links projectactive-link"
+                onclick="openProjectTab('HTML/CSS')"
+              >
+                HTML/CSS
+              </p>
+              <p
+                class="projecttab-links"
+                onclick="openProjectTab('JAVASCRIPT')"
+              >
+                JAVASCRIPT
+              </p>
+              <p class="projecttab-links" onclick="openProjectTab('REACT JS')">
+                REACT JS
+              </p>
+              <p class="projecttab-links" onclick="openProjectTab('ALL')">
+                ALL
+              </p>
+            </div>
+            <div class="projecttab-contents projectactive-tab" id="HTML/CSS">
+              <div class="projects-list">
+                <div class="project">
+                  <img src="./images/Project1.png" alt="Todo List project" />
+                  <h4 class="title">TodoList Project</h4>
+                  <p class="description">
+                    By using Html, CSS, Javascript i developed TodoList project
+                  </p>
+                  <a href="#"><button class="btn">Read More</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="projecttab-contents" id="JAVASCRIPT">
+              <div class="projects-list">
+                <div class="project">
+                  <img src="./images/Project1.png" alt="Todo List project" />
+                  <h4 class="title">TodoList Project</h4>
+                  <p class="description">
+                    By using Html, CSS, Javascript i developed TodoList project
+                  </p>
+                  <a href="#"><button class="btn">Read More</button></a>
+                </div>
+                <div class="project">
+                  <img src="./images/Project1.png" alt="Todo List project" />
+                  <h4 class="title">TodoList Project</h4>
+                  <p class="description">
+                    By using Html, CSS, Javascript i developed TodoList project
+                  </p>
+                  <a href="#"><button class="btn">Read More</button></a>
+                </div>
+                <div class="project">
+                  <img src="./images/Project1.png" alt="Todo List project" />
+                  <h4 class="title">TodoList Project</h4>
+                  <p class="description">
+                    By using Html, CSS, Javascript i developed TodoList project
+                  </p>
+                  <a href="#"><button class="btn">Read More</button></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="projecttab-contents" id="REACT JS">
+              <div class="projects-list">
+                <div class="project">
+                  <img src="./images/Project1.png" alt="Todo List project" />
+                  <h4 class="title">TodoList Project</h4>
+                  <p class="description">
+                    By using Html, CSS, Javascript i developed TodoList project
+                  </p>
+                  <a href="#"><button class="btn">Read More</button></a>
+                </div>
+                <div class="project">
+                  <img src="./images/Project1.png" alt="Todo List project" />
+                  <h4 class="title">TodoList Project</h4>
+                  <p class="description">
+                    By using Html, CSS, Javascript i developed TodoList project
+                  </p>
+                  <a href="#"><button class="btn">Read More</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-contents" id=" REACT JS JAVASCRIPT HTML/CSS"></div>
+          </div>
+        </div>
+
+        <!--<p class="text">
+            Here you can see what projects i did and iam going to develope more
+            and more
+          </p>
+          <div class="projectlist-container">
+            <div class="project">
+              <img src="./images/Project1.png" alt="Todo List project" />
+              <h4 class="title">TodoList Project</h4>
+              <p class="description">
+                By using Html, CSS, Javascript i developed TodoList project
+              </p>
+              <a href="#"><button class="btn">Read More</button></a>
+            </div>
+            <div class="project">
+              <img src="./images/Project1.png" alt="Todo List project" />
+              <h4 class="title">TodoList Project</h4>
+              <p class="description">
+                By using Html, CSS, Javascript i developed TodoList project
+              </p>
+              <a href="#"><button class="btn">Read More</button></a>
+            </div>
+            <div class="project">
+              <img src="./images/Project1.png" alt="Todo List project" />
+              <h4 class="title">TodoList Project</h4>
+              <p class="description">
+                By using Html, CSS, Javascript i developed TodoList project
+              </p>
+              <a href="#"><button class="btn">Read More</button></a>
+            </div>
+            <div class="project">
+              <img src="./images/Project1.png" alt="Todo List project" />
+              <h4 class="title">TodoList Project</h4>
+              <p class="description">
+                By using Html, CSS, Javascript i developed TodoList project
+              </p>
+              <a href="#"><button class="btn">Read More</button></a>
+            </div>
+          </div>
+        </div>-->
+
+        <!-- ****** Projects page end ****** -->
+        <!-- ****** Contact page start ****** -->
+
+        <div class="contactpage" id="contact">
+          <h2 class="heading">Contact Me</h2>
+          <!--<p class="text">
+            Want to more about me, just send me a message i will contact you as
+            son as possible
+          </p>-->
+          <div class="contact-container">
+            <div class="contact-form">
+              <form action="" class="form">
+                <label for="name"> Your name</label><br />
+                <input type="text" name="name" id="name" /><br />
+                <label for="email">EmailId</label><br />
+                <input type="email" name="email" id="email" /><br />
+                <label for="">Your Message</label><br />
+                <textarea name="" id="" cols="25" rows="10">
+                your message here...
+              </textarea
+                ><br />
+                <a href=""
+                  ><button type="submit" class="btn">send Message</button></a
+                >
+              </form>
+            </div>
+
+            <div class="contact-message">
+              <p class="text">Let's have a quickchat about your thoughts</p>
+              <p class="text">
+                Feel free to contact me, i would like to discuss anything
+                whatever is running in your mind. hope i can help you, so don't
+                hesitate to contact me
+              </p>
+              <div class="contact-links">
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="fab fa-github"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ****** Contact page end ****** -->
+      </div>
+    </div>
+
+    <!-- js file link-->
+    <script src="script.js"></script>
+  </body>
+</html>
+<!-- 
+    <main-contaner>
+      aside
+
+ <main-contaner>
+
+-->
