@@ -1,0 +1,44 @@
+.color-1 {
+  --main-color: #680ea0;
+}
+.theme-darklight {
+  position: fixed;
+  top: 50px;
+  right: 30px;
+}
+.theme-darklight i {
+  font-size: 3rem;
+}
+
+.color-picker {
+  position: fixed;
+  left: 50%;
+  bottom: 30px;
+  display: flex;
+  gap: 2rem;
+  z-index: 1001;
+  cursor: pointer;
+}
+.color-picker span {
+  width: 25px;
+  height: 25px;
+  border-radius: 40%;
+}
+.color-green {
+  background-color: #6fa00b;
+}
+.color-yellow {
+  background-color: #deca14;
+}
+.color-blue {
+  background-color: #0d3bcf;
+}
+.color-red {
+  background-color: #db1818;
+}
+.color-darkorange {
+  background-color: darkorange;
+}
+.color-greencyan {
+  background-color: #40916c;
+}

@@ -12,7 +12,9 @@
     />
 
     <!-- ****** css link ***** -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- ****** css link for theme changing and color changing ***** -->
+    <link rel="stylesheet" href="styles/styleswither.css" />
   </head>
   <body>
     <div class="main-container">
@@ -83,13 +85,16 @@
                 </p>
               </div>
               <div class="row2 tab-titles">
-                <p class="tab-links active-link" onclick="openTab('skills')">
+                <p
+                  class="tab-links link active-link"
+                  onclick="openTab('skills')"
+                >
                   Skills
                 </p>
-                <p class="tab-links" onclick="openTab('experience')">
+                <p class="tab-links link" onclick="openTab('experience')">
                   Experience
                 </p>
-                <p class="tab-links" onclick="openTab('education')">
+                <p class="tab-links link" onclick="openTab('education')">
                   Education
                 </p>
               </div>
@@ -169,6 +174,7 @@
                 ALL
               </p>
             </div>
+            <!-- ****** HTML/CSS projects****** -->
             <div class="projecttab-contents projectactive-tab" id="HTML/CSS">
               <div class="projects-list">
                 <div class="project">
@@ -181,6 +187,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- ****** JAVASCRIPT projects****** -->
             <div class="projecttab-contents" id="JAVASCRIPT">
               <div class="projects-list">
                 <div class="project">
@@ -209,7 +217,7 @@
                 </div>
               </div>
             </div>
-
+            <!-- ****** REACT JS projects****** -->
             <div class="projecttab-contents" id="REACT JS">
               <div class="projects-list">
                 <div class="project">
@@ -234,47 +242,8 @@
           </div>
         </div>
 
-        <!--<p class="text">
-            Here you can see what projects i did and iam going to develope more
-            and more
-          </p>
-          <div class="projectlist-container">
-            <div class="project">
-              <img src="./images/Project1.png" alt="Todo List project" />
-              <h4 class="title">TodoList Project</h4>
-              <p class="description">
-                By using Html, CSS, Javascript i developed TodoList project
-              </p>
-              <a href="#"><button class="btn">Read More</button></a>
-            </div>
-            <div class="project">
-              <img src="./images/Project1.png" alt="Todo List project" />
-              <h4 class="title">TodoList Project</h4>
-              <p class="description">
-                By using Html, CSS, Javascript i developed TodoList project
-              </p>
-              <a href="#"><button class="btn">Read More</button></a>
-            </div>
-            <div class="project">
-              <img src="./images/Project1.png" alt="Todo List project" />
-              <h4 class="title">TodoList Project</h4>
-              <p class="description">
-                By using Html, CSS, Javascript i developed TodoList project
-              </p>
-              <a href="#"><button class="btn">Read More</button></a>
-            </div>
-            <div class="project">
-              <img src="./images/Project1.png" alt="Todo List project" />
-              <h4 class="title">TodoList Project</h4>
-              <p class="description">
-                By using Html, CSS, Javascript i developed TodoList project
-              </p>
-              <a href="#"><button class="btn">Read More</button></a>
-            </div>
-          </div>
-        </div>-->
-
         <!-- ****** Projects page end ****** -->
+
         <!-- ****** Contact page start ****** -->
 
         <div class="contactpage" id="contact">
@@ -320,10 +289,33 @@
 
         <!-- ****** Contact page end ****** -->
       </div>
+      <!-- ****** Main Content page end ****** -->
+    </div>
+    <!-- ****** Main Container page end ****** -->
+
+    <!-- ****** Themechange Start ****** -->
+    <div class="theme-darklight" onclick="changeTheme()">
+      <i class="fa-regular"></i>
+    </div>
+    <!-- ****** Themechange End ****** -->
+
+    <!-- ****** Colorchange start ****** -->
+    <div class="color-picker">
+      <span class="color color-green" data-color="#6fa00b"></span>
+      <span class="color color-yellow" data-color="#deca14"></span>
+      <span class="color color-blue" data-color="#0d3bcf"></span>
+      <span class="color color-red" data-color="#db1818"></span>
+      <span class="color color-darkorange" data-color="darkorange"></span>
+      <span class="color color-greencyan" data-color="#40916c"></span>
     </div>
 
+    <!-- ****** Colorchange End ****** -->
+
     <!-- js file link-->
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
+
+    <!-- ****** JS link for theme changing and color changing ****** -->
+    <script src="js/stylewsither.js"></script>
   </body>
 </html>
 <!-- 

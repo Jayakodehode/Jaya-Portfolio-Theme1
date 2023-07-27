@@ -2,22 +2,50 @@
 
 :root {
   --main-color: #680ea0;
-  --white: #fefeff;
-  --black: #2b2a2a;
-  --light-black: #666;
-
-  --light-main-color: #f0f1f1;
+  --whitetext: #f0f9fa;
+  --blacktext: #112a46;
+  --greytext: #666;
+  --header-bg: #fefeff;
+  --maincontent-bg: #f8f9fa;
 
   /* secondary color  #680ea0
    #efe6f5
-
+#7300e6
+b30024
    black text
    #474549
    #222
+   #112A46
+   
+#2b2a2a
 
 white text
    #f0f1f1
-   f8f9fa*/
+   f8f9fa
+   
+   yellow bg EDF14C'
+   green bg BAF14C
+   blue : #
+4CEDF1
+cyan #
+4CF1E8
+dark cyan #
+70EFE2
+
+
+   */
+}
+body.color-1 {
+  --main-color: #680ea0;
+}
+body.dark {
+  --main-color: #07edec;
+  --light-main-color: #f0f1f1;
+  --whitetext: #2b2a2a;
+  --blacktext: #f8f9fa;
+  --greytext: #666;
+  --header-bg: #010923;
+  --maincontent-bg: #010923;
 }
 * {
   padding: 0;
@@ -36,8 +64,9 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: var(--light-main-color);
+  background-color: var(--maincontent-bg);
   padding-left: 36rem;
+  color: var(--blacktext);
 }
 .main-content {
   margin: 0 5rem;
@@ -48,7 +77,7 @@ body {
   top: 1rem;
   right: 1rem;
   z-index: 10000;
-  background-color: var(--white);
+  background-color: var(--header-bg);
   font-size: 3rem;
   padding: 2rem;
   border-radius: 0.4rem;
@@ -62,12 +91,16 @@ body {
 .contact-links a {
   font-size: 3rem;
   font-weight: 700;
-  color: var(--black);
+  color: var(--blacktext);
   padding: 2rem;
   text-align: center;
+  opacity: 0.5;
+  transition: 2s ease;
 }
 .contact-links a:hover {
   color: var(--main-color);
+  opacity: 1;
+  font-size: 3.2rem;
 }
 
 /* --------contact-links end------*/
@@ -82,6 +115,7 @@ body {
   font-weight: 700;
   padding: 0.2rem;
   position: relative;
+  color: var(--blacktext);
 }
 .heading::before {
   content: "";
@@ -120,8 +154,8 @@ body {
   z-index: 1000;
   padding: 8rem 2rem;
   width: 36rem;
-  background-color: var(--white);
-  border-right: 1px solid var(--black);
+  background-color: var(--header-bg);
+  border-right: 1px solid var(--greytext);
   text-align: center;
 }
 /* --------logo start ------*/
@@ -130,7 +164,7 @@ body {
   font-weight: 700;
   position: relative;
   font-family: "Clicker Script", cursive;
-  color: var(--black);
+  color: var(--blacktext);
   padding: 0.5rem 2.5rem;
 }
 .logo::before {
@@ -168,7 +202,7 @@ body {
 .header nav ul li a {
   font-size: 18px;
   font-weight: 700;
-  color: var(--black);
+  color: var(--blacktext);
   position: relative;
 }
 .header nav ul li a:hover::after {
@@ -202,7 +236,7 @@ body {
 }
 .homepage .homepage-intro .name {
   font-size: 4.5rem;
-  color: var(--black);
+  color: var(--blacktext);
   text-transform: uppercase;
 }
 .homepage .homepage-intro .name span {
@@ -210,12 +244,12 @@ body {
 }
 .homepage .homepage-intro .text1 {
   font-size: 2.5rem;
-  color: var(--black);
+  color: var(--blacktext);
   padding: 1rem 0;
 }
 .homepage .homepage-intro .text2 {
   font-size: 1.7rem;
-  color: var(--light-black);
+  color: var(--greytext);
 }
 a .btn {
   margin-top: 1rem;
@@ -224,7 +258,9 @@ a .btn {
   border-radius: 2rem;
   font-size: 1.7rem;
   position: relative;
-  /* border: 2px solid var(--main-color);*/
+  background: none;
+  color: var(--blacktext);
+  /*border: 2px solid var(--main-color);*/
 }
 a .btn::before {
   content: "";
@@ -251,7 +287,7 @@ a .btn::after {
 
 a .btn:hover {
   background-color: var(--main-color);
-  color: var(--white);
+  color: var(--whitetext);
 }
 .homepage > .homepage-img {
   flex: 1 1 40rem;
@@ -353,6 +389,7 @@ a .btn:hover {
   font-size: 2rem;
   margin-right: 10rem;
 
+  padding-top: 10px;
   font-weight: 500;
   cursor: pointer;
   position: relative;
@@ -392,14 +429,7 @@ a .btn:hover {
 }
 
 /*
-.projectlist-container {
-  display: grid;
-  grid-template-columns: repeat(3, 450px);
-  gap: 3rem;
-  min-height: 100vh;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-}
+
 .project img {
   width: 100%;
 }
@@ -438,7 +468,6 @@ a .btn:hover {
 }
 
 .form > label {
-  color: black;
   font-size: 18px;
 }
 input {
@@ -491,7 +520,7 @@ textarea {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 495px) {
   html {
     font-size: 50%;
   }
@@ -514,8 +543,17 @@ textarea {
   .projectlist-container .projecttab-titles .projecttab-links {
     margin-right: 2rem;
   }
+  .projectlist-container .projecttab-titles .projecttab-links {
+    font-size: 1.5rem;
+  }
   .projectlist-container .projecttab-titles {
     margin-top: 5rem;
+  }
+  .projects-list {
+    flex-direction: column;
+  }
+  .projects-list .project {
+    width: 100%;
   }
 
   .contact-container {

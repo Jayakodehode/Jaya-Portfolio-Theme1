@@ -12,15 +12,23 @@ window.onscroll = () => {
 
 const tabLinks = document.getElementsByClassName("tab-links");
 const tabContents = document.getElementsByClassName("tab-contents");
+const link = document.getElementsByClassName("link");
 function openTab(tabname) {
   for (const tablink of tabLinks) {
-    tablink.classList.remove("active-link");
+    if (tablink.classList.contains("active-link")) {
+      tablink.classList.remove("active-link");
+    }
+    tablink.classList.add("active-link");
   }
   for (const tabcontent of tabContents) {
     tabcontent.classList.remove("active-tab");
   }
+
   document.getElementById(tabname).classList.add("active-tab");
 }
+
+/* ------ JS code  projecttab links  */
+
 const projecttabLinks = document.getElementsByClassName("projecttab-links");
 const projecttabContents = document.getElementsByClassName(
   "projecttab-contents"
