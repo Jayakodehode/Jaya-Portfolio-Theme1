@@ -250,6 +250,7 @@ body {
 .homepage .homepage-intro .text2 {
   font-size: 1.7rem;
   color: var(--greytext);
+  margin-bottom: 10px;
 }
 a .btn {
   margin-top: 1rem;
@@ -259,10 +260,13 @@ a .btn {
   font-size: 1.7rem;
   position: relative;
   background: none;
-  color: var(--blacktext);
-  /*border: 2px solid var(--main-color);*/
+  background-color: var(--main-color);
+  color: var(--whitetext);
+  /*color: var(--blacktext);
+
+  border: 2px solid var(--main-color);*/
 }
-a .btn::before {
+a .btn:hover:before {
   content: "";
   width: 25px;
   height: 25px;
@@ -273,7 +277,7 @@ a .btn::before {
   border-top: 5px solid var(--main-color);
   border-radius: 0.8rem;
 }
-a .btn::after {
+a .btn:hover::after {
   content: "";
   width: 25px;
   height: 25px;
@@ -286,8 +290,10 @@ a .btn::after {
 }
 
 a .btn:hover {
-  background-color: var(--main-color);
-  color: var(--whitetext);
+  /* background-color: var(--main-color);
+  color: var(--whitetext);*/
+  background: none;
+  color: var(--blacktext);
 }
 .homepage > .homepage-img {
   flex: 1 1 40rem;
@@ -428,17 +434,12 @@ a .btn:hover {
   width: 100%;
 }
 
-/*
-
-.project img {
-  width: 100%;
-}
-.project h4 {
+.project h2 {
   font-size: 1.7rem;
 }
 .project p {
   font-size: 1.5rem;
-}*/
+}
 /* -------Projectpage end------*/
 
 /* ------Contactpage end------*/
