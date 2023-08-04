@@ -1,39 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Roboto:wght@400;500;700&display=swap");
 
 :root {
-  --main-color: #680ea0;
-  --whitetext: #f0f9fa;
-  --blacktext: #112a46;
+  --main-color: #07edec;
+  --light-main-color: #f0f1f1;
+  --whitetext: #2b2a2a;
+  --blacktext: #f8f9fa;
   --greytext: #666;
-  --header-bg: #fefeff;
-  --maincontent-bg: #f8f9fa;
-
-  /* secondary color  #680ea0
-   #efe6f5
-#7300e6
-b30024
-   black text
-   #474549
-   #222
-   #112A46
-   
-#2b2a2a
-
-white text
-   #f0f1f1
-   f8f9fa
-   
-   yellow bg EDF14C'
-   green bg BAF14C
-   blue : #
-4CEDF1
-cyan #
-4CF1E8
-dark cyan #
-70EFE2
-
-
-   */
+  --header-bg: #010923;
+  --maincontent-bg: #010923;
 }
 body.color-1 {
   --main-color: #680ea0;
@@ -47,6 +21,15 @@ body.dark {
   --header-bg: #010923;
   --maincontent-bg: #010923;
 }
+body.light {
+  --main-color: #680ea0;
+  --whitetext: #f0f9fa;
+  --blacktext: #112a46;
+  --greytext: #666;
+  --header-bg: #fefeff;
+  --maincontent-bg: #f8f9fa;
+}
+
 * {
   padding: 0;
   margin: 0;
