@@ -24,7 +24,7 @@ document.querySelectorAll(".color-picker .color").forEach((color) => {
       .querySelector(":root")
       .style.setProperty("--main-color", maincolor);
     document
-      .querySelector("body.dark")
+      .querySelector("body.light")
       .style.setProperty("--main-color", maincolor);
   });
 });

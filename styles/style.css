@@ -12,7 +12,7 @@
 body.color-1 {
   --main-color: #680ea0;
 }
-body.dark {
+/*body.dark {
   --main-color: #07edec;
   --light-main-color: #f0f1f1;
   --whitetext: #2b2a2a;
@@ -20,7 +20,7 @@ body.dark {
   --greytext: #666;
   --header-bg: #010923;
   --maincontent-bg: #010923;
-}
+}*/
 body.light {
   --main-color: #680ea0;
   --whitetext: #f0f9fa;
@@ -59,8 +59,8 @@ body {
   position: fixed;
   top: 1rem;
   right: 1rem;
-  z-index: 10000;
-  background-color: var(--header-bg);
+  z-index: 1;
+  /*background-color: var(--header-bg);*/
   font-size: 3rem;
   padding: 2rem;
   border-radius: 0.4rem;
@@ -91,7 +91,7 @@ body {
 .text {
   font-size: 2rem;
   padding: 1rem;
-  text-align: start;
+  text-align: center;
 }
 .heading {
   font-size: 4rem;
@@ -188,14 +188,18 @@ body {
   color: var(--blacktext);
   position: relative;
 }
-.header nav ul li a:hover::after {
+.header nav ul li a::after {
   content: "";
   height: 4px;
-  width: 100%;
+  width: 0;
   background-color: var(--main-color);
   position: absolute;
   top: 100%;
   left: 0;
+  transition: 1s linear;
+}
+.header nav ul li a:hover::after {
+  width: 100%;
 }
 
 /* --------navbar end ------*/
@@ -220,7 +224,7 @@ body {
 .homepage .homepage-intro .name {
   font-size: 4.5rem;
   color: var(--blacktext);
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 .homepage .homepage-intro .name span {
   color: var(--main-color);
@@ -433,6 +437,10 @@ a .btn:hover {
   min-height: 100vh;
 }
 .contact-container {
+  margin: 5rem auto;
+}
+
+/*.contact-container {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -449,13 +457,13 @@ a .btn:hover {
 }
 .contact-message {
   flex: 0 0 60%;
-}
+}*/
 
 .form > label {
   font-size: 18px;
 }
 input {
-  width: 80%;
+  width: 30rem;
   height: 35px;
   padding: 5px;
   border: none;
@@ -464,9 +472,9 @@ input {
   margin-bottom: 20px;
 }
 textarea {
-  width: 80%;
+  width: 30rem;
   height: 200px;
-  padding: 1px;
+  padding: 0.5rem;
   border: none;
   border-radius: 10px;
   resize: none;

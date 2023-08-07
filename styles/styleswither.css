@@ -5,6 +5,7 @@
   position: fixed;
   top: 50px;
   right: 30px;
+  z-index: 1;
 }
 .theme-darklight i {
   font-size: 3rem;
@@ -16,7 +17,7 @@
   bottom: 30px;
   display: flex;
   gap: 2rem;
-  z-index: 1001;
+  z-index: 1;
   cursor: pointer;
 }
 .color-picker span {
@@ -48,3 +49,17 @@ color: #14e956
 
 #0d3bcf
 #6fa00b*/
+
+@media (max-width: 991px) {
+  .theme-darklight {
+    top: 70px;
+    right: 25px;
+    z-index: 1;
+  }
+  .color-picker {
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -25,6 +25,7 @@ function openTab(tabname) {
   }
 
   document.getElementById(tabname).classList.add("active-tab");
+  tabname.classList.toggle("active-link");
 }
 
 /* ------ JS code  projecttab links  */
