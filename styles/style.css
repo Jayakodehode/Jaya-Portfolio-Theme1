@@ -426,6 +426,22 @@ a .btn:hover {
 .projects-list .project img {
   width: 100%;
 }
+.projects-list .project .projectcard {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+.projects-list .project .projectcard a .btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 1rem 3rem;
+}
+.projects-list .project .projectcard .gh-link-button {
+  display: flex;
+}
 
 .project h2 {
   font-size: 1.7rem;
