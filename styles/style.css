@@ -92,6 +92,7 @@ body {
   font-size: 2rem;
   padding: 1rem;
   text-align: center;
+  margin-top: 5rem;
 }
 .heading {
   font-size: 4rem;
@@ -212,6 +213,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   min-height: 100vh;
+  margin-top: 1rem;
 }
 .homepage .homepage-intro {
   flex: 1 1 40rem;
@@ -249,6 +251,7 @@ a .btn {
   background: none;
   background-color: var(--main-color);
   color: var(--whitetext);
+
   /*color: var(--blacktext);
 
   border: 2px solid var(--main-color);*/
@@ -292,12 +295,15 @@ a .btn:hover {
 /* --------Homepage end------*/
 
 /* --------Aboutpage start------*/
+.aboutpage {
+  min-height: 100vh;
+  margin-top: 10rem;
+}
 
 .about-conatiner {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  min-height: 100vh;
   margin-top: 10rem;
 }
 .about-img {
@@ -412,7 +418,7 @@ a .btn:hover {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 3rem;
 }
 .projects-list .project {
   width: 30%;
@@ -429,7 +435,7 @@ a .btn:hover {
 }
 /* -------Projectpage end------*/
 
-/* ------Contactpage end------*/
+/* ------Contactpage start------*/
 .contactpage {
   display: flex;
   flex-direction: column;
@@ -485,6 +491,10 @@ textarea {
 
 /* -------Contactpage end------*/
 
+.fa-brands {
+  font-size: 3rem;
+}
+
 /* media queries*/
 
 @media (max-width: 1355px) {
@@ -520,16 +530,16 @@ textarea {
   .header {
     width: 100%;
   }
-  .homepage {
-    gap: 0;
-  }
 
   .homepage-img img {
     width: 100%;
-    margin-top: 0;
+    margin-top: 5rem;
   }
   .about-conatiner {
     flex-direction: column;
+  }
+  .about-img img {
+    display: none;
   }
   .about-intro .tab-titles .tab-links,
   .projectlist-container .projecttab-titles .projecttab-links {

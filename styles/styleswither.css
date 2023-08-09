@@ -13,8 +13,8 @@
 
 .color-picker {
   position: fixed;
-  left: 50%;
-  bottom: 30px;
+  right: 3rem;
+  top: 14rem;
   display: flex;
   gap: 2rem;
   z-index: 1;
@@ -42,24 +42,18 @@
 }
 .color-greencyan {
   background-color: #40916c;
-}
-/*#7843e9
+  /*#7843e9
 color: #14e956
 
 
 #0d3bcf
 #6fa00b*/
+}
 
 @media (max-width: 991px) {
   .theme-darklight {
     top: 70px;
     right: 25px;
     z-index: 1;
-  }
-  .color-picker {
-    top: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
   }
 }
