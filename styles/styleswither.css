@@ -13,12 +13,19 @@
 
 .color-picker {
   position: fixed;
+  z-index: 10000;
+  top: 13rem;
   right: 3rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+
+  /*right: 3rem;
   top: 14rem;
   display: flex;
   gap: 2rem;
   z-index: 1;
-  cursor: pointer;
+  cursor: pointer;*/
 }
 .color-picker span {
   width: 25px;
