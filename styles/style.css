@@ -312,7 +312,7 @@ a .btn:hover {
   margin-top: 10rem;
 }
 .about-img {
-  flex: 0 0 30%;
+  flex: 0 0 40%;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -322,8 +322,14 @@ a .btn:hover {
   border-radius: 20%;
 }*/
 .about-img .skill-icons {
-  width: 12rem;
-  height: 12rem;
+  width: 50px;
+  height: 50px;
+}
+.skill-icon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-right: 30px;
 }
 .about-img .skill-icons img {
   width: 90%;
@@ -332,15 +338,25 @@ a .btn:hover {
 .about-intro {
   flex: 0 0 60%;
 }
+.about-intro .row-1 {
+  margin-right: 5rem;
+  padding-right: 1rem;
+}
 .about-intro .row-1 p {
   font-size: 1.7rem;
   margin-bottom: 1.5rem;
 }
-.about-intro .tab-titles {
+.about-intro .row-1 .sub-heading {
+  padding: 1rem 0;
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
+.about-img .tab-titles {
   display: flex;
   flex-wrap: wrap;
 }
-.about-intro .tab-titles .tab-links {
+.about-img .tab-titles .tab-links {
   font-size: 2rem;
   margin-right: 10rem;
   margin-bottom: 2rem;
@@ -348,7 +364,7 @@ a .btn:hover {
   cursor: pointer;
   position: relative;
 }
-.about-intro.tab-titles .tab-links::after {
+.about-img.tab-titles .tab-links::after {
   content: "";
   width: 0;
   height: 3px;
@@ -358,31 +374,32 @@ a .btn:hover {
   bottom: -6px;
   transition: 0.4s;
 }
-.about-intro .tab-titles .tab-links.active-link::after {
+.about-img .tab-titles .tab-links.active-link::after {
   width: 70%;
 }
 
-.about-intro .tab-contents ul li {
+.about-img .tab-contents ul li {
   font-size: 1.7rem;
   margin: 12px 0;
   padding: 5px;
 }
-.about-intro .tab-contents ul li span {
+.about-img .tab-contents ul li span {
   font-size: 1.8rem;
   font-weight: 500;
   color: var(--main-color);
   padding: 15px 0;
 }
-.about-intro .tab-contents {
+.about-img .tab-contents {
   display: none;
 }
-.about-intro .tab-contents.active-tab {
+.about-img .tab-contents.active-tab {
   display: block;
 }
 
 /* --------Aboutpage end------*/
 
 /* --------Projectspage start------*/
+
 .projectspage {
   display: flex;
   flex-direction: column;
@@ -391,80 +408,21 @@ a .btn:hover {
   margin-top: 5rem;
 }
 .projectlist-container {
+  margin: 10rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 5rem;
+}
+.project {
+  width: 43%;
+
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
-.projectlist-container .projecttab-titles {
-  margin: 5rem 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.projectlist-container .projecttab-titles .projecttab-links {
-  font-size: 2rem;
-  margin-right: 10rem;
-
-  padding-top: 10px;
-  font-weight: 500;
-  cursor: pointer;
-  position: relative;
-}
-.projectlist-container .projecttab-titles .projecttab-links::after {
-  content: "";
-  width: 0;
-  height: 3px;
-  background: var(--main-color);
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  transition: 0.4s;
-}
-.projectlist-container .projecttab-contents {
-  display: none;
-}
-.projectlist-container .projecttab-contents.projectactive-tab {
-  display: block;
-}
-.projectlist-container
-  .projecttab-titles
-  .projecttab-links.projectactive-link::after {
-  width: 70%;
-}
-
-.projects-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-}
-.projects-list .project {
-  width: 30%;
-}
-.projects-list .project img {
+.project img {
   width: 100%;
-}
-.projects-list .project .projectcard {
-  display: flex;
-  flex-direction: column;
-
-  gap: 3px;
-}
-.projects-list .project .projectcard a .btn {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 1rem 3rem;
-}
-.projects-list .project .projectcard .gh-link-button {
-  display: flex;
-}
-
-.project h2 {
-  font-size: 1.7rem;
-}
-.project p {
-  font-size: 1.5rem;
+  height: 500px;
 }
 /* -------Projectpage end------*/
 

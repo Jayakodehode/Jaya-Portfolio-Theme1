@@ -76,7 +76,23 @@
           <h2 class="heading">About Me</h2>
           <div class="about-conatiner">
             <div class="about-img">
-              <div class="skill-icons">
+              <div class="row2 tab-titles">
+                <p
+                  class="tab-links link active-link"
+                  onclick="openTab('skills')"
+                >
+                  Skills
+                </p>
+                <p class="tab-links link" onclick="openTab('experience')">
+                  Experience
+                </p>
+                <p class="tab-links link" onclick="openTab('education')">
+                  Education
+                </p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                     <div class="skill-icon">
+            <div class="skill-icons">
               <img  src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1"/>
             </div>
               <div class="skill-icons">
@@ -108,90 +124,62 @@
             </div>
             <div class="skill-icons">
             <img width="48" height="48" src="https://img.icons8.com/color/48/mysql-logo.png" alt="mysql-logo"/>
-          </div>
+           </div>
+        </div>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li>
+              <span> Sep. 2019- Oct. 2020 </span><br />IT - Konsulent
+              (Ringevikar), Strand Kommune, Norway
+            </li>
+            <li>
+              <span>Juli. 2019- Sep. 2019 </span><br />IT – Konsulent
+              (vikar), Strand Kommune, Norway
+            </li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li>
+              <span>2012-2016</span><br />
+              Informatikk Bachelor, JNTU Hyderabad
+            </li>
+            <li>
+              <span>2010-2012</span><br />
+              VGS NRI junior college, Hyderabad
+            </li>
+          </ul>
+        </div>
             <!--<img src="./images/Myimage.png" alt="My Image" />-->
             </div>
             <div class="about-intro">
               <div class="row-1">
+                <h1 class="sub-heading"> What i did </h1>
                 <p>
                   I was formerly employed as an IT consultant with Strand
                   Kommune, in this position I delt with cases using technologies
-                  called Footprints, AD and SCCM.I earned my bachelor's degree
+                  called Footprints, AD and SCCM. I earned my bachelor's degree
                   in computer science, which provided me with valuable insights
                   into programming languages and their impact on software
                   development and computer systems.
                 </p>
+                <h1 class="sub-heading"> What i am doing now  </h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ducimus exercitationem quae eius? Cumque repudiandae eos,
-                  distinctio laboriosam quos repellat! Optio?
+                I am one of the participent in kodehode program from Jobloop. Duration of this program is 1 year(6 months of theory and 6 months of practice place). Now I am looking for practice place where i can gain the knowledge of realtime experince in developing websites.
                 </p>
+                <h1 class="sub-heading"> What i can do </h1>
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Nobis doloremque eligendi consequuntur veritatis blanditiis
                   placeat dolore voluptates quos autem illo?
                 </p>
               </div>
-              <div class="row2 tab-titles">
-                <p
-                  class="tab-links link active-link"
-                  onclick="openTab('skills')"
-                >
-                  Skills
-                </p>
-                <p class="tab-links link" onclick="openTab('experience')">
-                  Experience
-                </p>
-                <p class="tab-links link" onclick="openTab('education')">
-                  Education
-                </p>
-              </div>
-
-              <div class="tab-contents active-tab" id="skills">
-                <ul>
-                  <li>
-                    <span>Front End Technologies</span> <br />Html, CSS,
-                    Javscript, React
-                  </li>
-                  <li>
-                    <span>Back End Technologies</span> <br />MySql, node js,
-                    MongoDB
-                  </li>
-                  <li><span>Programming Technologies</span> <br />C, Java</li>
-                  <li>
-                    <span>IT Skills</span> <br />Citrix Workspace, Footprints,
-                    Active Directory (AD), and System Center Configuration
-                    Management (SCCM)
-                  </li>
-                </ul>
-              </div>
-              <div class="tab-contents" id="experience">
-                <ul>
-                  <li>
-                    <span> Sep. 2019- Oct. 2020 </span><br />IT - Konsulent
-                    (Ringevikar), Strand Kommune, Norway
-                  </li>
-                  <li>
-                    <span>Juli. 2019- Sep. 2019 </span><br />IT – Konsulent
-                    (vikar), Strand Kommune, Norway
-                  </li>
-                </ul>
-              </div>
-              <div class="tab-contents" id="education">
-                <ul>
-                  <li>
-                    <span>2012-2016</span><br />
-                    Informatikk Bachelor, JNTU Hyderabad
-                  </li>
-                  <li>
-                    <span>2010-2012</span><br />
-                    VGS NRI junior college, Hyderabad
-                  </li>
-                </ul>
-              </div>
-              <a href="#"><button class="btn">Download CV</button></a>
-              <a href="#projects"><button class="btn">Projects</button></a>
             </div>
+            <div>
+            <a href="#"><button class="btn">Download CV</button></a>
+            <a href="#projects"><button class="btn">Projects</button></a>
+          </div>
           </div>
         </div>
 
@@ -202,146 +190,52 @@
         <div class="projectspage" id="projects">
           <h2 class="heading">Projects</h2>
           <div class="projectlist-container">
-            <div class="projecttab-titles">
-              <p
-                class="projecttab-links projectactive-link"
-                onclick="openProjectTab('HTML/CSS')"
-              >
-                HTML/CSS
-              </p>
-              <p
-                class="projecttab-links"
-                onclick="openProjectTab('JAVASCRIPT')"
-              >
-                JAVASCRIPT
-              </p>
-              <p class="projecttab-links" onclick="openProjectTab('REACT JS')">
-                REACT JS
-              </p>
-              <p class="projecttab-links" onclick="openProjectTab('ALL')">
-                ALL
-              </p>
-            </div>
-            <!-- ****** HTML/CSS projects****** -->
-            <div
-              class="projecttab-contents projectactive-tab"
-              id="HTML/CSS"
-              id="ALL"
-            >
-              <div class="projects-list">
-                 <!-- ********* Project1 start ******** -->
-                <div class="project">
-                  <img src="./images/Project1.png" alt="Todo List project" />
-                  <div class="projectcard">
-                  <h1 class="title">TodoList Project</h1>
-                  <p class="description">
-                    By using Html, CSS, Javascript i developed TodoList project
-                  </p>
-                  <div class="gh-link-button">
-                  <a href="#"><button class="btn"><i class="fa-brands fa-github"></i>Repo</button></a>
-                  <a href="#"><button class="btn"><i class="fa-brands fa-github"></i>Live link</button></a>
-                </div>
-                </div>
-                </div>
-                 <!-- ********* Project1 End ******** -->
+            <!--  ****** project 1 ******  -->
+            <div class="project">
+              
+              <div class="project-image">
+                <img src="./images/NewsHomepage.png" alt="NewsHomepage">
+              </div>
+            <div class="project-description">
+              <p>Here i created simple NewsHomepage project</p>
+             
+              <div class="githublinks">
+                <a href="">Github Repo</a>
+                <a href="">Github live</a>
               </div>
             </div>
+            </div>
 
-            <!-- ****** JAVASCRIPT projects****** -->
-            <div class="projecttab-contents" id="JAVASCRIPT">
-              <div class="projects-list">
-
-                 <!-- ********* Project1 start ******** -->
-                <div class="project">
-                  <img src="./images/Project1.png" alt="Todo List project" />
-
-                  <div class="projectcard">
-                    <h1 class="title">TodoList Project</h1>
-                    <p class="description">
-                      By using Html, CSS, Javascript i developed TodoList project
-                    </p>
-                  <div class="gh-link-button">
-                    <a href="#"><button class="btn"><i class="fa-brands fa-github"></i>Repo</button></a>
-                    <a href="#"><button class="btn"><i class="fa-brands fa-github"></i>Live link</button></a>
-                  </div>
-                  </div>
-                </div>
-                 <!-- ********* Project1 End ******** -->
-
-
-                  <!-- ********* Project2 start ******** -->
-                <div class="project">
-                  <img src="./images/Project1.png" alt="Todo List project" />
-                  <div class="projectcard">
-                    <h1 class="title">TodoList Project</h1>
-                    <p class="description">
-                      By using Html, CSS, Javascript i developed TodoList project
-                    </p>
-                    <div class="gh-link-button">
-                    <a href="#"><button class="btn"><i class="fa-brands fa-github"></i>Repo</button></a>
-                    <a href="#"><button class="btn"><i class="fa-brands fa-github"></i>Live link</button></a>
-                  </div>
-                  </div>
-                </div>
-                 <!-- ********* Project2 End ******** -->
-
-
-                  <!-- ********* Project3 start ******** -->
-                <div class="project">
-                  <img src="./images/Project1.png" alt="Todo List project" />
-                  <div class="projectcard">
-                    <h1 class="title">TodoList Project</h1>
-                    <p class="description">
-                      By using Html, CSS, Javascript i developed TodoList project
-                    </p>
-                    <div class="gh-link-button">
-                    <a href="#"><button class="btn"><i class="fa-brands fa-github"></i>Repo</button></a>
-                    <a href="#"><button class="btn"><i class="fa-brands fa-github"></i>Live link</button></a>
-                  </div>
-                  </div>
-                </div>
-                 <!-- ********* Project3 End ******** -->
+            <!--  ****** project 2 ******  -->
+            <div class="project">
+              <div class="project-image">
+                <img src="./images/TodoList.png" alt="NewsHomepage">
+              </div>
+            <div class="project-description">
+              <p>Here i created simple NewsHomepage project</p>
+              
+              <div class="githublinks">
+                <a href="">Github Repo</a>
+                <a href="">Github live</a>
               </div>
             </div>
-            <!-- ****** REACT JS projects****** -->
-            <div class="projecttab-contents" id="REACT JS">
-        
-              <div class="projects-list">
+            </div>
 
-                <!-- ********* Project1 start ******** -->
-                <div class="project">
-                  <img src="./images/Project1.png" alt="Todo List project" />
-                  <div class="projectcard">
-                    <h1 class="title">TodoList Project</h1>
-                    <p class="description">
-                      By using Html, CSS, Javascript i developed TodoList project
-                    </p>
-                    <div class="gh-link-button">
-                    <a href="#"><button class="btn"><i class="fa-brands fa-github"></i>Repo</button></a>
-                    <a href="#"><button class="btn"><i class="fa-brands fa-github"></i>Live link</button></a>
-                  </div>
-                  </div>
-                </div>
-                 <!-- ********* Project1 end ******** -->
-                 <!-- ********* Project2 start******** -->
-                <div class="project">
-                  <img src="./images/Project1.png" alt="Todo List project" />
-                  <div class="projectcard">
-                    <h1 class="title">TodoList Project</h1>
-                    <p class="description">
-                      By using Html, CSS, Javascript i developed TodoList project
-                    </p>
-                    <div class="gh-link-button">
-                    <a href="#"><button class="btn"><i class="fa-brands fa-github"></i>Repo</button></a>
-                    <a href="#"><button class="btn"><i class="fa-brands fa-github"></i>Live link</button></a>
-                  </div>
-                  </div>
-
-                </div>
-                 <!-- ********* Project2 end ******** -->
+ <!--  ****** project 2 ******  -->
+            <div class="project">
+              <div class="project-image">
+                <img src="./images/cal.png" alt="NewsHomepage">
+              </div>
+            <div class="project-description">
+              <p>Here i created simple NewsHomepage project</p>
+            
+              <div class="githublinks">
+                <a href="">Github Repo</a>
+                <a href="">Github live</a>
               </div>
             </div>
-            <div class="tab-contents" id="REACT JS JAVASCRIPT HTML/CSS"></div>
+            </div>
+           
           </div>
         </div>
 
