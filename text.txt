@@ -297,3 +297,118 @@
 .project p {
   font-size: 1.5rem;
 }
+
+
+
+
+
+
+
+About section
+
+   <div class="row2 tab-titles">
+                <p
+                  class="tab-links link active-link"
+                  onclick="openTab('skills')"
+                >
+                  Skills
+                </p>
+                <p class="tab-links link" onclick="openTab('experience')">
+                  Experience
+                </p>
+                <p class="tab-links link" onclick="openTab('education')">
+                  Education
+                </p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                     <div class="skill-icon">
+            <div class="skill-icons">
+              <img  src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1"/>
+            </div>
+              <div class="skill-icons">
+              <img src="https://img.icons8.com/color/48/css3.png" alt="css3"/>
+            </div>
+              <div class="skill-icons">
+              <img src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/>
+            </div>
+              <div class="skill-icons">
+                <img  src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png" alt="external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo"/>
+            </div>
+              <div class="skill-icons">
+              <img  src="https://img.icons8.com/color/48/nodejs.png" alt="nodejs"/>
+            </div>
+            <div class="skill-icons">
+              <img src="https://img.icons8.com/color/48/visual-studio-code-2019.png" alt="visual-studio-code-2019"/>
+            </div>
+            <div class="skill-icons">
+              <img src="https://img.icons8.com/fluency/48/github.png" alt="github"/>
+            </div>
+            <div class="skill-icons">
+              <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png" alt="external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo"/>
+            </div>
+            <div class="skill-icons">
+              <img  src="https://img.icons8.com/color/48/figma--v1.png" alt="figma--v1"/>
+            </div>
+            <div class="skill-icons">
+            <img src="https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png" alt="java-coffee-cup-logo--v1"/>
+            </div>
+            <div class="skill-icons">
+            <img width="48" height="48" src="https://img.icons8.com/color/48/mysql-logo.png" alt="mysql-logo"/>
+           </div>
+         </div>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li>
+              <span> Sep. 2019- Oct. 2020 </span><br />IT - Konsulent
+              (Ringevikar), Strand Kommune, Norway
+            </li>
+            <li>
+              <span>Juli. 2019- Sep. 2019 </span><br />IT – Konsulent
+              (vikar), Strand Kommune, Norway
+            </li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li>
+              <span>2012-2016</span><br />
+              Informatikk Bachelor, JNTU Hyderabad
+            </li>
+            <li>
+              <span>2010-2012</span><br />
+              VGS NRI junior college, Hyderabad
+            </li>
+          </ul>
+        </div>
+
+
+
+css for About section
+
+
+
+.about-img {
+  flex: 0 0 40%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+/*.about-img img {
+  width: 25%;
+  border-radius: 20%;
+}*/
+.about-img .skill-icons {
+  width: 50px;
+  height: 50px;
+}
+.skill-icon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-right: 30px;
+}
+.about-img .skill-icons img {
+  width: 90%;
+  background-size: cover;
+}
