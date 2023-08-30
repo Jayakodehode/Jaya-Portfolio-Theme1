@@ -381,24 +381,72 @@ a .btn:hover {
   justify-content: space-evenly;
   gap: 5rem;
 }
-.project {
+.project-wrap {
   width: 30%;
-
+  position: relative;
+}
+.project-wrap img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  color: var(--blacktext);
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  transition: opacity 0.5s ease-in-out;
 }
-.project img {
-  width: 100%;
+.project-overlay:hover {
+  opacity: 0.9;
 }
-.project-image:hover .project-description {
-  opacity: 1;
-  transform: scale(1.1);
+.project-overlay > * {
+  transform: translateY(-25px);
+  transition: transform 0.7s ease-in-out;
 }
-.project-description {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
+.project-overlay:hover > * {
+  transform: translateY(0);
 }
+
+.project-overlay h1 {
+  font-size: 3rem;
+}
+.project-overlay p {
+  font-size: 1.2rem;
+  padding: 0 5rem;
+  letter-spacing: 0.8px;
+}
+.project-overlay .technology {
+  display: flex;
+  gap: 1rem;
+}
+.project-overlay .technology > * {
+  border: 2px solid var(--main-color);
+  color: var(--blacktext);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+.project-overlay .githublinks {
+  display: flex;
+  gap: 2rem;
+}
+.project-overlay .githublinks > * {
+  background: var(--main-color);
+  color: var(--whitetext);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
+
 /* -------Projectpage end------*/
 
 /* ------Contactpage start------*/
