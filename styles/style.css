@@ -8,6 +8,7 @@
   --greytext: #666;
   --header-bg: #010920;
   --maincontent-bg: #010920;
+  --projectpage-text: #f8f9fa;
   /* darkbg color: #010923*/
 }
 body.color-1 {
@@ -29,6 +30,7 @@ body.light {
   --greytext: #666;
   --header-bg: #fefeff;
   --maincontent-bg: #f8f9fa;
+  --projectpage-text: #f8f9fa;
 }
 
 * {
@@ -60,13 +62,14 @@ body {
   position: fixed;
   top: 1rem;
   right: 1rem;
-  z-index: 1;
+  z-index: 10000;
   /*background-color: var(--header-bg);*/
   font-size: 3rem;
   padding: 2rem;
   border-radius: 0.4rem;
   cursor: pointer;
   display: none;
+  color: #f0f1f1;
 }
 .hidden {
   display: none !important ;
@@ -204,6 +207,9 @@ body {
 .header nav ul li a:hover::after {
   width: 100%;
 }
+nav .fa-xmark {
+  display: none;
+}
 
 /* --------navbar end ------*/
 
@@ -332,8 +338,8 @@ a .btn:hover {
 }
 
 .skills {
-  font-size: 2.5rem;
-  padding: 1.5rem 2.5rem;
+  font-size: 2.2rem;
+  padding: 1.5rem 2rem;
   text-align: center;
   background-color: var(--main-color);
   color: var(--whitetext);
@@ -396,7 +402,7 @@ a .btn:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: black;
+  background: linear-gradient(#010920 70%, #f8f9fa);
   opacity: 0;
   color: var(--blacktext);
   display: flex;
@@ -419,11 +425,13 @@ a .btn:hover {
 
 .project-overlay h1 {
   font-size: 3rem;
+  color: var(--projectpage-text);
 }
 .project-overlay p {
   font-size: 1.2rem;
   padding: 0 5rem;
   letter-spacing: 0.8px;
+  color: var(--projectpage-text);
 }
 .project-overlay .technology {
   display: flex;
@@ -431,7 +439,7 @@ a .btn:hover {
 }
 .project-overlay .technology > * {
   border: 2px solid var(--main-color);
-  color: var(--blacktext);
+  color: var(--projectpage-text);
   padding: 0.5rem 1rem;
   border-radius: 1rem;
 }
@@ -459,25 +467,6 @@ a .btn:hover {
 .contact-container {
   margin: 5rem auto;
 }
-
-/*.contact-container {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  min-height: 700px;
-  box-shadow: 4px 4px 15px grey;
-  border-radius: 5px;
-  padding: 4rem;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-}
-.contact-form {
-  flex: 0 0 40%;
-  border-radius: 10px;
-}
-.contact-message {
-  flex: 0 0 60%;
-}*/
 
 .form > label {
   font-size: 18px;
@@ -511,9 +500,82 @@ textarea {
 /* media queries*/
 
 @media (max-width: 1355px) {
+  .heading::before {
+    left: 41%;
+  }
+  .heading::after {
+    left: 45%;
+  }
+  .about-skills {
+    gap: 1rem;
+  }
+  .skills {
+    font-size: 2.2rem;
+  }
+  .project-wrap {
+    width: 90%;
+    gap: 3rem;
+  }
+  .project-overlay {
+    gap: 4rem;
+  }
+  .project-overlay p {
+    font-size: 1.7rem;
+  }
+  .project-overlay h1 {
+    font-size: 4rem;
+  }
+  .project-overlay .githublinks > * {
+    font-size: 2rem;
+  }
 }
+@media (max-width: 1050px) {
+  .heading::before {
+    left: 37%;
+  }
+  .heading::after {
+    left: 42%;
+  }
 
-@media (max-width: 991px) {
+  .about-conatiner {
+    gap: 3rem;
+  }
+  .about-skills {
+    width: 100%;
+    gap: 2rem;
+  }
+  .about-intro {
+    width: 100%;
+  }
+
+  .skills {
+    font-size: 2rem;
+  }
+
+  .project-overlay {
+    gap: 2rem;
+  }
+  .project-overlay p {
+    font-size: 1.5rem;
+  }
+  .project-overlay h1 {
+    font-size: 3rem;
+  }
+  .project-overlay .githublinks > * {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 950px) {
+  .homepage-img img {
+    width: 100%;
+    margin-top: 5rem;
+  }
+  .about-conatiner {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+@media (max-width: 850px) {
   html {
     font-size: 50%;
   }
@@ -523,11 +585,16 @@ textarea {
   #menubar {
     display: inline;
   }
+
   .header {
     left: -150%;
   }
   .header.active {
     left: 0%;
+  }
+  nav .fa-xmark {
+    display: block;
+    font-size: 4rem;
   }
   .heading::before {
     left: 42%;
@@ -536,25 +603,34 @@ textarea {
     left: 45%;
   }
 
-  .homepage-img img {
-    width: 100%;
-    margin-top: 5rem;
-  }
-  .about-conatiner {
-    flex-direction: column;
-    gap: 4rem;
-  }
-
-  .about-skills {
+  .project-wrap {
     width: 100%;
     gap: 3rem;
   }
-  .about-intro {
-    width: 100%;
+  .project-overlay {
+    gap: 4rem;
   }
-
-  .project-wrap {
-    width: 40%;
+  .project-overlay p {
+    font-size: 2rem;
+  }
+  .project-overlay h1 {
+    font-size: 5rem;
+  }
+  .project-overlay .githublinks > * {
+    font-size: 2.5rem;
+  }
+  .about-intro .row-1 p {
+    font-size: 2.2rem;
+  }
+  .about-intro .row-1 .sub-heading {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .skills {
+    font-size: 2.5rem;
+  }
+  .about-btn {
+    font-size: 3rem;
   }
 }
 
@@ -567,10 +643,10 @@ textarea {
     width: 100%;
   }
   .heading::before {
-    left: 30%;
+    left: 33%;
   }
   .heading::after {
-    left: 37%;
+    left: 40%;
   }
 
   .homepage-img img {
@@ -591,12 +667,32 @@ textarea {
   }
 
   .project-wrap {
-    width: 100%;
+    width: 90%;
     gap: 3rem;
+  }
+  .project-overlay {
+    gap: 1.5rem;
+  }
+  .project-overlay p {
+    font-size: 1rem;
+  }
+  .project-overlay h1 {
+    font-size: 2.5rem;
+  }
+  .project-overlay .githublinks > * {
+    font-size: 1.5rem;
   }
 
   .contact-container {
     flex-direction: column;
     gap: 2rem;
+  }
+}
+@media (max-width: 395px) {
+  .heading::before {
+    left: 30%;
+  }
+  .heading::after {
+    left: 37%;
   }
 }
