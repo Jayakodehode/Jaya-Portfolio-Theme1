@@ -1,9 +1,11 @@
 /* ----- JS code for light and dark theme ----- */
 const darkLight = document.querySelector(".theme-darklight");
+
 function changeTheme() {
   darkLight.querySelector("i").classList.toggle("fa-moon");
   darkLight.querySelector("i").classList.toggle("fa-sun");
   document.body.classList.toggle("light");
+
   resetColors();
 }
 
