@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .skills {
+        width: 5rem;
+        height: 5rem;
+      }
+      .skills-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+      .skills:hover .skills-container {
+        transform: rotateY(180deg);
+      }
+      .skills-front,
+      .skills-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+      }
+      .skills-front i {
+        font-size: 2.5rem;
+      }
+      .skills-back {
+        background-color: #2980b9;
+        color: white;
+        transform: rotateY(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="skills">
+      <div class="skills-container">
+        <div class="skills-front">
+          <i class="bx bxl-figma"></i>
+        </div>
+        <div class="skills-back">HTML5</div>
+      </div>
+    </div>
+  </body>
+</html>

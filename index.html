@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jaya Portfolio</title>
+
+ <!-- ****** css link for icons from Boxicons ***** -->
+
+ <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!-- ****** font awsome cdn link ***** -->
 
     <link
@@ -81,60 +88,136 @@
           <div class="about-conatiner">
             <div class="about-skills">
               <div class="skills">
-                HTML5
+                <div class="skills-container">
+                  <div class="skills-front">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAA61JREFUaEPtmFmojkEYx3+HKJTlgsh2hWQrQoTse5ItIaEkuUCyXUi5sSQk5MKa5UaS7HuSshNywZUlQlkS2emvl6Zp3m9mzvv6vk59T53OOTPP/P/Pf555Z56ZCqq4VVTx+CkLKHUGyxmoChk4BIwuUaDiHlOIO2QJbQVmlUiAuGdnFbACWFYiAeJenlXAHGBTiQSIe0tWAeOAAyUSIO6DWQX0AS6WSIC4L2UV0Ap46AC5CnzOSVgtoJsDqzXwKKuA+sBbB0hn4HZOAroANxxY4n6fVYDGfwVqWEBDgVM5CRgBHLWwvgE1ffgh54AwngLNLLCpwB4fQWD/DGC75SvOFr7xoQKUXqXZtAXAOqOhP6CPrjLWExhkDRRnVx9YqIDjwDALbA2w2GhbBKz2EUb0i1NLq6CFCtgJTLOQdgHTjTb9vcNHGNEvTi2tXASssmZboPYMjQSO+Agj+sW51OcfmoF5wHoL7BrQ3WhrB2z2Eab0a63XtvrmAxt8eKECJgN7LbAnQEsfQWD/c6CJ5SvO/b7xoQIGAmcssKB92hcA/LmX/0h+m+7iPOcbHyqgA3DXAVYX+OAj8fQ3Al46fMR534cdKqAh8MoBNjGFvBDvR+C64ZA2ORL2Oi8BaWn24bv6LwO9jI7BjpLkF1Ad0O+CFpoBgSjNmhXTtG3eMhqUkTYeTt0tJhg+Kkl2W2PE1dgXvPpjBNwD2lugC4G1RpvrwLPj2AjMNRpdJ7i4OuYt4CwwwAJV6bDEaNP/CqiQyd8sOVRPac83TVx2beTEjMmAzgHtzaZtA2YaDVM8FaouQOOt0nkfMMnCVZuwvBYjwDVThx1vRjpR+yXFn+4M+hBVdpwALgBfrKjOJ/5ms7hU7XotRoBSv9JCtHcUL6HD4QHQ1mq3l1kqbowAVaP6SE17DOhq+aYykQM6X3TnrWeNV2WratdrMQKGA8cciFoi2kp1vTwNKCvfU5h1Le0NDEl+OqX4iUtLzmsxAjTTN72I8AnQulbtJMEKWoeVvoe+gF4gfBb8YBAjoDmgCrQYJq5nIUQxAjSTep0ohuk1QtWu12IECOyd44PzkkQ6iKNB6JhYAWMBvVfqIwwmCQxGj2cnk7fQgu+hJl6sgL9jqwE9klcDvRwE1S0OIXeSD10H3RXgZ6DYf26VFWDzNAV0qdf2p3qpTkoguvyozlHA2qFexAZs++clwMbVEtM70qikdFCwWh4KPlf7XwJyDbIQWFlA0aY6haicgXIGMs7Ab5TBmDGxaRcuAAAAAElFTkSuQmCC"
+                    />
+                  </div>
+                  <div class="skills-back">HTML5</div>
+                </div>
               </div>
+            
               <div class="skills">
-                CSS
+                <div class="skills-container">
+                  <div class="skills-front">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAA7BJREFUaEPtmFnIjVEUhp9fUQoXZhdyJxkyhCtE5kwphcxxYyhTJCSKZIjIdIFMRWSehyRxZcyY5AaZKVwoMvTWd2q3fefstf/z/Z1OnVXn5uy133e939p7r7V3FWVuVWUePxUBpc5gJQPlkIHZwMgSBXoM2FyI27KEVgDLSiRA3MuLFTAD2FoiAeLeXqyAUcCREgkQ99FiBfQErpdIgLhvFCugNfCsRALE/bxYAQ2Arykgd4HvGQmrD3RJwRJ3QQ7LKSTcn0Btj6AvcDUjAf2BSx7WL6BOCN8q4CXQ0gMbDRwOERjHxwP7PV9xtgrNtwq4BXT1wGYC20IExvH5wHrPV5zdQ/OtAs4AQzywXcCBEEGe8VfAC2dsDbDQ8z0NDA/hWwXsBqaEwCLG/Qq7D5jgzRfn1BCmVcBqYFEILGJ8OrDD8b8IDPDmi3NxCNMqYA6wMQQWMa7m8ITjfx/o6M0X56YQplXAGOBgCAx4Anw0+M0CHjl+b4AW3ryxwKEQllWAzvwrITBgGqDNHWOK4Tf8d7011RmrgPbAQ0NUS4FVBj/XpSnwPmWOOB+HsKwCmgAfQmBJ263lEWMdgAcpE8T5KQRkFSCcvyGwZF0XbH+ToLY4WP2AyynYpthMTgn4O6CZQUTI5SbQw3Eal1IQxeVv6lTcGAFpR52q6WsHuS2g1BcynSw6YXI2F9jgTRBX59CX0HiMAHWL6hpd031VVTVnOw3VU/VknjNnLbDAwxXXwKwFqFtU1+iaXgz0apGzlcCSALGCdRu3vcBEb464/P9SYWMyIFJ1ja6pmXN7mFDB+5E80ah1yNl5YJCHKy4/K0ULULeortG1C8Bg77+6QJ8kKI3p9DqX/K4llyN3yj2gk4chrnVZL6FJwB4P1NSzBwJ5CzT3fMSlDjVoMUtIaVa6XfsMTAZ0X6iO6Zanm5dv2sD+FbPoJaRL9508UWptqxidTLrML3n8dMftlSwvfZB2efzEpaUVtJgMqLCoa7SYitUp4HjirGC1H3oD2iMhE5eKWdBiBMj3TxAxG4daxtYlqpApNK35htnEmBdFHI2tHDEZEOZToI0VvJp+4lBLYrJYAbq36j1oBNDIxGB3UuusfaNeKa07TUWKFZAD0bxuwNDkuUWNVyyWCpxOtbPJ77Z13btKYknzfU+12cMSMerv6+Vx/Jac77mgLffngjnMSoBLojdUtRJ6CFOG9K6aC1hP5XrzzMxqQkBmwVmAKgIsX6kmfSoZqMmva8Eu+wz8A9zPmjG1HOivAAAAAElFTkSuQmCC"/>
+                  </div>
+                  <div class="skills-back">CSS</div>
+                </div>
               </div>
+
               <div class="skills">
-                React JS
+                <div class="skills-container">
+                  <div class="skills-front">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAnRJREFUaEPt2UnITWEYB/DftyMKURZYWIhkJpSdKEqiLERYKCEkkiELO0TJVIYiEllaGcpOEQvzUIYsTFEWlOzoqffW6XS+y9W5535fzrt6O+cd/v/n/0zn3i69fHT1cvxqAp1WsFagJyvwq9PgcvcXekszF6oJlKxgrUDJBm35uFqBlk1W8oZagZIN2vJxtQItm6zkDbUCJRu05eNqBVo2WckbagVaNehJfEqbpmN+7oCfuIJreIt+WIsF3VxUuQJTcD+B2YgjGWAvMBfvCsDOxjkM7/QHTXcEvmEMPjaRdBrudZrAZDxIIDbgaJqfwLoMuEOItVexH4OxHds6TWASHhYQWIXz6fks3MoAPYA1GFCgTuUxMBGPEpBNOJzmAfB0mg/DK/T5iwxROYEJeFwQxGewOgM4MtRuzEHfJkQqJzAeT7rJQmPxPAe2PyJbhe8P6gku1IxA5P2w+OsCoBHEFzCvJwVxvg40sO1BBO6PAiI3Uq1ovKrchbJZqDsCAS7qwnHsS/MG4Bm4kyFWOYFxeJoArE8gmyWbr6mNuJ1ZlP11sK0E3uNzKkiN+0dkWoXNiIIVI4BuxSjsyjG6iOWZZ98RwR2jbQSOJSBDcBMjcRfhAo1xMIG+jhX4kl5ExgkSA5P7LE0VOV4PzTSDbSMQ3eSinBWjCcs3aeFKkTqfYSbCsn8ae7GjihhYhktN0KxM3WVjSaizGB+a7FmIy7kK3TYXChzRhJ3CmwyocKkt2FkANNJm9ENnk7vFktGYmsgtKdjTVgKN+yKQXybLBZgyRyUEygScP+v/I9BOa5Z2dv03a2mm/MeDagX+0XClbev1CvwGolGGMeBm63QAAAAASUVORK5CYII="/>
+                  </div>
+                  <div class="skills-back">Javascript</div>
+                </div>
               </div>
+
               <div class="skills">
-                Javascript
-              </div> 
-              <div class="skills">
-                Figma
+                <div class="skills-container">
+                  <div class="skills-front">
+                    <img src="data:image/png;base64,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"/>
+                  </div>
+                  <div class="skills-back">ReactJS</div>
+                </div>
               </div>
+
               <div class="skills">
-                Github
+                <div class="skills-container">
+                  <div class="skills-front">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAzdJREFUaEPtmUmozmEUxn+IhDIskCEhYaHIEMmUaSVSbCxMWVDmhWyUlFiYio0MUWRBsVAsZMiYiI2iZJ4WJEMWJD38P92b677nef++6966Z/s95znnec//fd/znq8FTdxaNPH8aRbwvytYpgKTgEXAcGBwppB7wC1gP3AxhyNHQGtgM7AW/tkn+B3YCmwAvjlCcgTsAZY5QQzsbmC5gbdXcCxw2QmQgR3nxHArcBKYmZGU43IcmBN1cAU8BXpHyTNxj4B+UV9HQGfgXZS4JK4j8CHC4QhoCXwB2kSIS2C+Am0BnUxJcwSI7DYwLMlaDnATGBWlcAUsBvZFyTNx84HDUV9XgHh1Y46PBjBx54Apjk+OgB7ACWC0EyiAvQbMBl4HsL8hOQIqzhuLXqiXE7AO7LOiFxKfbWUEdANmAFOBufVEVtNXsVbAGGBgcdY/AK4Cp4GXdvYlmjElro3WKRC0skjqWI/85RR7DywFjgX4akFyKrAS2GkE0v2xAthSnO/1uUqAhEhQyFwBWsU75mXWAbgL9A9kpMtLJ9yVAPYnxBWwF1gSJS9wC4GDhs8pYFYU7wrQphsQJS9whwBdTlF7C3StRivRHXgVzaIG7gnQx/RTu6JPNWlOBZTE4yTjn4A3gI5cx3TUXo84OALE9wloHyGugTkLTDd8tJG18dX5Js0VcAGYkGStDdBjfZ3hcx8YFMW7AqYBZ8zTS5+eWmRtzIjNA45GgMK4AuSzvhirODF0tp8HdKnVZ7uAVVHiXAHy0zl9ANAzM2WNrpWoJBxt5mpWWUMx9VF6cQ0B1Inqladm7kVqJer6PecTqvBsAhYAqXa6TIykphzynoDmQyOS7L8AOTGC1D65krkBjAxH8GMY1D75amC7FcGPYdG75X3oTM2KTNwYVRPQDvhssTeyPaDN+9wUoPGgxoRVM7e86tW7GNlcyuidDHp/g6kdmGhE2AGsMfA21K2A2mI1cxHTftFtq3F51cwVoET0vtUNnDK9nas9R826JdXPaESiO6GuBfgIaPTiPORTi/HX33MqUCGbXFRiKNC3GJ3oL9NtgN7BDWJlBDRIgqkgzQJSK1Tt35t8BX4As0RtMY/IGakAAAAASUVORK5CYII="/>
+                  </div>
+                  <div class="skills-back">Figma</div>
+                </div>
               </div>
+
+
               <div class="skills">
-                Visual Studio Code
+                <div class="skills-container">
+                  <div class="skills-front">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABHBJREFUaEPtmXmoVVUUxn+PECoxhQZzCDEtcoDEiVATMtPEiKISyYHQRFScR0woEzUjFU1EtIGoHCFSSxwRFREnFAJTnIfKMDNT0z8M5YNzH+edt6dzz7nv8eAteDzu3Xt/e31rr73WXuuWUcOlrIbrTy2B6j7BPE/gSeAV4CWgB9AsQe4PYGf0txm4lAf5rAQaAROBvsBzKRU6BWwCFgDnU64tn56FwAxgOvBQsZvH1s0C5gB30mIVQ0BussLgImn3Ts6XS70PbEkDlJbAl8CQNBsUMfcrYGjoulACj0T+2jUUOOO8vUAf4IYPJ4RAHWA70N0HlvP4LuBl4H8XbgiBZcDwnJULhVsMjM1C4F3gewPAcmA10A4YCbQM1Sgx7yKwFDgY5ZCpBpy3gB9s+K4TaACcBfQ/Kd0A+WlBdEIfAUpmBfkT+B24CzQBGsfG/gY+BhbFvnsWOGHYSzhPA/+ZSLgIzAcmWJib1tUFWkdK/2ZZp8QnImeAa4Y5t4CHDd/LODPTEHgMuOBIUiF3pxivkrWfMCz8B3gKuJkcsykixh86NKgP/FuMhp419xzjo4EloQR0uZo6wDoCh3Mm0DxyLRvsEaB9CAEpp6hgE29oy0BsGjDXsV7BQIGhXEwuNBn41AKiiKKTka+WQnSB9exW5jfJIOA7H4E1QD8LwHrgjVJoHsP8GnjPssfCZGQ0ncBR4HkLgPEi5UxoMPCNBXMj8LrvBORjitcmUWZelbPCSbhejif1MaCNj8BloKFFSVnn22okoNCtEO68xCr1WliUVPmoErCUMtBhJD0nlPGdBPYBL1g0/AxQlCql6EH3iWWDc4DyhZPAT1GRbsLY7yCXFykV+ipmTHII6OQjoHQ9yqGNXqfX89LWgHMbeNCCrxDf30dAOUATbVIpFudIxvcGk2FVPzhdSC/RKx6lFOq25ai4oFRj7PFgtgKO+who/EDS1xLAigZvAltzIqFO3o9APQeeouMzyXHbc1r9GfV+CqL3iToEqpriIndSQ+qvIonotNUcGx+wXtFPUbCC2Ago1krpgkVWAgOALlGIezGGom6auha/AKeBDQ4X1CPt7ciSbYGejgub1FVkr4YS0LzZkXUKaxTe3ok+yMUqpPToez3DO3usuSNq/gYYvXzK58AY0wJXaahQJqvGOw5qsYyIkomUfTQBqgi2zqOZjLA2hfYqrlRrVyonheGrbeUquxObycJSXs8NlZ2vAordSnIKc74Ippo3TT3R2xUsfASku5SK16I/A6+lsKBpqqv2jc+fBKg7YpUQAlo8D5gSQ1E/Z1wGEiEEZDTVH04JJWC61Io4qtBUbKs1rn6PYrmxAZXQwkdAJa2pS1eJTBoCWqzWulrsNnk8MCe4CAwDvvBZvjCeloDWdYgKa9NPSlkI/AqoaE/VrimGQIG82h9qg8SlGAJqJ+pOfRBq9fi8LASEozygI1eH+oGoiRuihx5kJ6POt+5N6t/GsrhQiIJVNifrCVSZoraNaglU9xHU+BO4DzvMvTGGqVZOAAAAAElFTkSuQmCC"/>                 </div>
+                  <div class="skills-back">Github</div>
+                </div>
               </div>
+
               <div class="skills">
-                API
+                <div class="skills-container">
+                  <div class="skills-front">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAA4lJREFUaEPtmVmoTlEUx39XpmQoCUlSigfJVCQKb0QZCi+myBgvktmDyBQpMoRE5iGUKVOmePIiZSjFG+FByfQg+t/21vmO73x7nfud851u3f3y3e5ew/9/1j5rrb1OHY181TVy/DQRKDqCRUdgNLABGARcAzYDz9I8lCIJTAFOAi1igK86Uk8tRIoisAjYFwB4G9gEPKwkVwSBbcAKy9N1MiIgIiL036o1gWPAzBTgo6L3gUnAl+g/a0WgNXAJGNNA8F7tsiPxz0wtCHQEbgBDqgQv9R9Am1pGoDug0PfKALw3UfLQ84xAX+AO0DVD8DKVisBA4D3wISWI4cB1oH1KPYu4iYAcqzKOcBZ3Asst1oGJ7oU1iteLfY+f7QrKQQKdXej7xYyoxAvcuwrG5wCHgGYp0L8FxgEvjDpBAirhgxOMfQPmA6fK7K8DNhpBeLGLwGzgK/DHqBskIGNtA8ZUkBa70Ev0IDDPCMCLLQN2RXQyI7AU2G0A88ZVVb0bkw3yXkRJQY3c45hOZgRkdxZwJOVZtnB44t6jT2WEMyUg++OBC0ArC7KAjMBtB9YCvxNkMycgP8rnagPaVUFC79Q0Z6eSmVwIyKHSqSqq0mva9RyYAChVhlZuBOS4J3DP/YaA+H2lWtWFX0aFXAn0dheKHkYwEjvhUutPo05uBIYCN4EORiBRsdfuCOk3tHIhoPx+GmgZ8l5hXxFQWj5nyFQWN8FK7I2sBLbE21eLhwSZo4Au80lHKtMIHAAWGMB+BjoZ5LzIK1fIyh2pzAiojVA7EVqa30wHZgB7QsKRfbXOC4HjMZ3MCFgMrQI0HvFLhepMChISjR8pi1/pBd8BPc0lCWB0M5sKPCqzPwq4Yuhko6rRI5UZgebAYZc5os4euC6yXCPm5QYAdwFNIqzLZ6mzRoVgBLwdZSAdFS39vcboQBMItR6q3nksMwE57+YK2MuUSNQ33QL6p9SziKciYDGYJKMOVu/EyGqMlNGtGQH51uj8vGsnsuJRUwIe9F53h66WxEegS9RInpO5ONiGTC3iNrYCq4siIL9zXYpOGwlVb11J9TmqZNUyAt7xWDe5s9y19S1ArY3GLyXfBbyxIgjI9zB3R066Y6hJFGh1BbpTJ66iCAhQHzd6j06vNTPaAex33wKCR61IAgKnjLIe0CheY8Y0XW09uaIJBJ9wSKCJQOgJ5b3f6CPwF3DJlDFcdQtHAAAAAElFTkSuQmCC"/>                  </div>
+                  <div class="skills-back">Visual Studio Code</div>
+                </div>
               </div>
+
               <div class="skills">
-                Sql
+                <div class="skills-container">
+                  <div class="skills-front">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABNFJREFUaEPtmXfotWMYxz8vKTMjlJFNCJE/lJKMUEQisvfee2fvkZHxl51CJCtCIpFsCtmjkFF2otCnrvvt6nnPedZ53s77q/eq88fv99z3fb7f5xr39b3OLGa4zZrh+JlPYNoenFseWBQ4Fdg7CN4HXAP8OTThoQl43r7AFcCKFbDfAGcA9w5JYkgCmwI3A5slgF8BCwErpP+9ChwDvDEEkSEILA9cCRwAs4vC78ClwLVB4KwIqYUD9H/AncCZwPeTEJmEgG/2ROA8YIkE7B7gtBHAVg1CuyXAvwIXAzcA//Qh0pfATsB1wNrpSw2JI1qExpbAbcC6ae/HwEnAE11JdCUg4FuBbdIXfRehcDdgaLSxBYEjgYuAZdKG54CjAAm1srYEDJELgWMjpj38b+D6APFHq2+bc5HgJSEZSWmG0o3xfb81ndtEwOeHRkIulw57LOL/s6YvaPnccDKsDK9iJvfZwO11nm0i8GwlXD4BjgaeaQms67I9gauAVSphte24g+oIeOl4IWk/A+eHa7uC6rPeymbpXSQ2G7reMXNYHYHHgR0BS91awA99kEywx7L7Rex/FNilK4GngO2BL4HVaoDYMhwez+15Pkprl4yqshewUeUM1z0ZXv18zPleiIsBTwM79CVgO+DbGGcHAnfEw4PihvVPS+2DwNItvGCFu2DEuqkRWBN4F7ArLfZ+hKGlc414sxmzxcE7JtsgBJpCaJQHbJ1PCSRWshMACWTTqybrIfHPTyPX5gkCj6Sk2xh4pyaM3gM2iOcrAbbdxabmAXNCz2i2zrfUENguLqx/o6P9el4gsAdwfwX0C8ArEUofAB8CvuE6m5oHBGW/r0aoM+u85dp24bURCwch0LeMiscWYH9AtbZ+A5mHgN0rawYh0KcKjcJqW2CyrhcfpedWlYWnA1dPOwe8vE6O9vh5wNgfZ4tH2+x6TT2QG7dBPNA1hLzAimAfFRZVMgr+UjrfBjYZ2gOWtdzeVgFUL7KHgV/Soi2Al2q8oAIrZda9WTMP4oE+OaC83C+BVgC9Caiw9JCqy5wwaQ9O62zYbNyKDUKgawhZPpcCXgfsidqaol6Jmm1qBAoIGzTHJlm4Vwk5hnHCYfxXbSICpZ9RyFj6fhrzKse103m5gsg+Jwso8+StGvfk5DYEdx61tk6ROTW7PDYJ3u7yrhGHqAG8STXJjFrTNozKunMAP0VSKmedXsxhdQSM4xeBDdMua7rqK6suK4iVRLOGW8v72q6RB7nqWQXFkCvb7PObphLLApcBh1UQ+ZbtY1ZO/bxLlJff9kBvm3ETsHVlrxLV5B47P20iUM5bPZJRbbvAGIAPAI5Fupia2SFwHmy5X/3gmNJJdq21JVAOMZm99r1sstYV/HEdJ82G3SWVCuWbNveKxm7CP9FvZJsDf0U+NPX1GYgNnKPDosLKM2WoJdcxTmvr6oFxB5vw6l4/L8cMtcx0yh41sCCrLbPzJ73aeqCbQQxFwBbY38SyOSZxXOJkwinbuZXnAj4+BE3rN15dOBQBz7WE+kNFFi7OUiWQfy8z3Kzr3r4T25AEBGOFcpptLPvTUzZFu8lpkv44MfI4YGgCBZfjQG/ufYB1AGdDhljdeKUXp7lFoBeYPpvmE+jz1obcM+M98D+ODShAxH44awAAAABJRU5ErkJggg=="/></div>
+                  <div class="skills-back">NodeJS</div>
+                </div>
               </div>
+
               <div class="skills">
-                Node JS
+                <div class="skills-container">
+                  <div class="skills-front">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAxNJREFUaEPtmUuozVEUxn+XvN8x8C6PUJ55hgFRyiMTEdcjBooykAEjIzMGjMgQISWPMiDkkZASySORV6KUZCCRgb7aN7dzz/mvc/Ze+x6n7je5p3vW3uv79tp7r7X2aaLB0dTg/OkQUO8I5o7AVqAXcCiX0JwChgIvgc7ABOBDDhG5BPQA7gNTAulHwFzgl7eIXAJOAs0lZM8AaxtBwDbgSAWiu4EDniK8IzAy7PvuFUj+AWYD2lIu8BSgue4A8wxmb4HJwA8PBZ4CdgIHqyR1DNhcpW2hmZeAIcBroGcNpOYAD2qwL2vqJUAruqlGMleBJTWOaWPuIWBawqFcANxOEeEh4HTC/X4OWFVPAcq4XwH9jcFvoD/wM2awxqRGYA2gDJsCZWxFMQqpAk4AG6I8/xt0ClgfO0eqAF2dYwqca3t1AgYU2Lwx5siWB/oC342Vex/K6eGGnc6BNZd7HphVRSJ6CnQBxhsCZgIPY7ZRyhZaBFw3nKonkIAZht1C4FZ7C1gJXDScKtt2BZSwirAUuNzeArRqNwyn54FuwDLDbj5wt70FqM99YTjVNaveYLVhNxpQmV0zUs6AKk+rpj8csvQWg1k0j+iBgdBjYGoBuf2hxN5RYKOtoy0UhVQBWuHtBZ73Ar2BPQU26pHVK0chVYB1kHeFh619BewmAc+i2DsUc/L7ChhbgYBe5hSBSq2mOjJ1ZtFIjYAcFz2jrANUchytwFC309lo9k4RkP9PgPriUqwIAlRxluI5MDGFvMZ6REDzbASOlyGjM6JC7UKZ71SKWInQ1OclQI6uAYtLPKpIkwB91xr/3bOKyPULD7rK0C0YBwwE7rX6nz5bj1/myrcYeEZAc44KZXFLAzMsCHgSHL4DpgPfqmZoGHoLkDv1CTdDBlZUFAF1XV/CE7s+uyGHAJHTAb0EqJToE55OVJHq5nFFLgEiqf2vX2iEEcBHV+ZhspwC5OIzMNjxum6zBrkF6PAOAvR7WRbkFnAlCLB64mhxuQUoYSkCy6MZ1uEazcW17Ly5I5BdTIeA7EtsOPgLJVJkMalpCHMAAAAASUVORK5CYII="/></div>
+                  <div class="skills-back">MongoDB</div>
+                </div>
               </div>
+
               <div class="skills">
-                Mongo DB
+                <div class="skills-container">
+                  <div class="skills-front">
+                    <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/c.png" alt="c"/></div>
+                  <div class="skills-back">C</div>
+                </div>
               </div>
-             
-             
+
+              <div class="skills">
+                <div class="skills-container">
+                  <div class="skills-front">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAA/pJREFUaEPtmWnoT1kYxz9/JNuYESFemBpmGrKUJcqSNSmKxCDxgiyRbJE1O0komrIUb2yv5s0oDSO7IkvWvLBEluw0NSH0rXPruu4995z7u/fv/yvPm1/9/899zvN9zrOfCsqcKspcf74D+NY3WNQN1AVmA6MNwD3ABuC/vAHnDaAaMAFYDjSJKPsEWAzsBD7mBSRPAL2AP4HfU5S7AUwBjuUBIg8AvwKbgYGeCh0EZgK3PL/7gr0UAA2BlcBEoHpGJT4A24AlwPMsMrIAqGkstwCon+XQmG9eA6vMTb7zkekL4A9gLdDC5xAP3jvAfOCA6zeuADqZANVvZdB5E+j6tVIagKbmWkekCQr9/yFwErgOXAE+AW2B1kB3oLmHLN2EAl0yY8kG4CfgtENaDAQrv6tg/ZuiYB9gLDDeEchjA/5lHL8NwCJghcMhyh5DgRMOvGGWDsbXWzl8p2ynIvgV2QAcAgakCJebDALuOSgRx1LL3JoMYKPDQH9fALKofDaJngIdgfsZlQ8+qwNcBlpa5EiXnr4AVOpjPzKCugDnUpT/BWgEqH14Y+FVgCvj1E7gOQ6oVfFyIRuALcD0hMM6A1MB1Qy5SEDKTMrxp2K+S4u33AHIYrJqlMYBu1JupR9wxPAMM4lC8myUCUBSDBwFlAqj1Aa46hAPaqsHm/mghwO/WDIBSHKhhcDqmINled1AEZQJQNINqADtjtHyJvBbRu3lSg3MsBOIUFaaDMwxNSa3LNQ3odpqXFRK9KXexvVqAF2BTaZKnwWamTljZJ5ZSMXtnxgtXwE/+moPCMAFQK2LYkJttW65ZADyu7ggm2SGkKiuZ4wFM2Cgm0kMUj4g1RC50NysLpQUA+tMPo8qqsM0ExdBmSpxEgBVTBWrOLoEtE9B8DewHtgKKPW6UKYsZKvE7UyvHz1cQbfdNHhximn+nRXaD2k7IbdRBrJR7gBkvWmWE3UL6jDVMv8PXAT2JXStCvxlwAyLvEwAbN3oe+NG6iLzIO2S5JpJaTjXGAgUvgvIld6WiKCwdloNV1zPE9ZXrjEEeFACiL2mc7WJkC5qAr8i20S2JiFdRoU8A9QK+I6UsvwOYJQDeO1al/oC0CByDWjscIBYNCNsBG478A83DaHLPKyNhLYaL3wBiF8rEOVsFysF8v8y2wyNnI/MH7WplkHU96uvqecAUixyLzVzmdYq4TPKdrEVNZSsp9Xiz44W9GVTZptXxGoxrEhRy10NSWqlC13uhoHktV5X66GlVaWt16NuUbYPHFEg2tuoWRMgG1W5J6awsnqpCR75ovWjyj/yhYH8YNbiYwA9I+0vl2dW37RZMn/aA0fJBxQt4DuAoi2cJv8z8oLFMU7P1QYAAAAASUVORK5CYII="/></div>
+                  <div class="skills-back">C++</div>
+                </div>
+              </div>
               
               <div class="skills">
-                Java
+                <div class="skills-container">
+                  <div class="skills-front">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABB1JREFUaEPt2WmorWMYBuDrkDnzmDLPYyhlLpTxh44hQ0pIQkJkjB/mRIbyA79Iph/IVGaZReZExsyZRYaM3fV8tdqts9e31/rWPmfVeWrXXnt93/ve9/sM7/08e44JtzkTjt9CAvPbg/PDA3vi8a6Izw8CN+G4SSbwGradVAJr4D0sP6kEzsI+2H0SCWyJt3AY7pw0AuvieXyB7bsCn3VmowqthSexSoF/f5IIbI7HsAL2wItTwB+El/HpsKTG6YEjkZr/L+bikQKZCnQCdsDFeGVY8OMMoatxKj7EvmjC5mRciutxHv4ZBfy4CNyLA5ALa298i1Vxd+XAIbh/VODN+12H0Dl1wp8h8f8rlsRTdfvu16UO6toDK+FzLIUDcU+d0mU4u4glbDq1Lj2wK57Gz1V1GqAfI/dAwqlJ5M5IdElg49I5KZU79iBMGC2DcxFvdGpdEgiwJO7qWLMH5XPYCd9hE/zQJYOuCUSkPVGAXyigh+KO+j1/2w1/d0WiawLBdRoOxs49IB/A/j2E7lqQCQRbbuC3cW0BXRlJ5mVxFc5Y0AkE3w24vIDn8/m4EEfg9kkgEIwpnQ8X2MNxVIVSPwmRfiGK9ZP6acVx1BzYC1vjGbw0zY6L4iTciD/6PJfqtA5ylxyLyJET2zAYhsBqpSKjaTIeORq/DNgssT/1mTQ2kRnpkb/peX+XOpBTcN0gEsMQiLq8pdwdHX8fvp9mo8jnNPMhvjg2LdDPFsAv+7z7X7WdaT+ntWEINAtugK0KUE6yn/2Jr0sj5SL7qj5PB2qbuhAvwEXjJNC79iLVuAzar833aT/XKzX726AXRvFA1o7GiepMrOayGmTZb20shg+mPLx0hc36SKv57qDF8v2oBKJxEssJkyRj4jll8C/EKysil1ikdpr7hN0S5a3TcU2BzKTuEtyK29oAb54ZlUDWSXJGJkQ+xCPzspB6vcYrEXhN5ck7qTzNfTET/CN7YEabjePhLjyQNTIyzHQhI5RZtS4IJMYzfUjtfqOmbx9NmTjkJo5U2K765Csq1hNWI9mwBCKVU0miOFPfkwdRmMdU0vYDFYKv4iE8Wrkwq2OVVJzjsRFurilbTrzXmjIZXZMq1Fi6sMyGfm9x3KlI6exaWVsPZEiVYVU0fer0uCzSIWF2ZtsN2hK4EqnbsQyqHqz6n8Sd6oW2e2+IzbAFMhDINCMaK6cfXPnunUGLtSWQdZarf0xEPmfThEma98T/vLRQ7/4Jn4i+5EzG7MmfN+tuaICmH4hEz0+aoYG38UwITHcYIZdpRMgkuWNp3H+qKUQ/xZlncomlOqUoROVmjfQMaUkjBAfaKAQijeONnFpCICP03sTtt/mP9UyAh3RIxhvJrVSoSJIZ2SgEZrTRuB5eSGBcJ9t23Yn3wP9BN70xc6hGxwAAAABJRU5ErkJggg=="/></div>
+                  <div class="skills-back">Java</div>
+                </div>
               </div>
+
+
               <div class="skills">
-                C
+                <div class="skills-container">
+                  <div class="skills-front">
+                    SQL</div>
+                  <div class="skills-back">Structured Query Language</div>
+                </div>
               </div>
+
               <div class="skills">
-                C++
+                <div class="skills-container">
+                  <div class="skills-front">
+                    <img width="48" height="48" src="https://img.icons8.com/material-outlined/48/api-settings.png" alt="api-settings"/></div>
+                  <div class="skills-back">Rest API</div>
+                </div>
               </div>
+
+              <div class="skills">
+                <div class="skills-container">
+                  <div class="skills-front">
+                    <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/active-directory.png" alt="active-directory"/></div>
+                  <div class="skills-back">Active Directory</div>
+                </div>
+              </div>
+
+
              
-              <div class="skills">
-                AD
-              </div>
-              <div class="skills">
-                SCCM
-              </div>
-              <div class="skills">
-                Footprints
-              </div>
            
             <!--<img src="./images/Myimage.png" alt="My Image" />-->
             </div>
@@ -175,30 +258,8 @@
           <h2 class="heading">Projects</h2>
           <div class="projectlist-container">
 
-             <!--  ****** project 1 ******  -->
-             <div class="project-wrap">
-              <img src="./images/Planet-Mars-Project .webp" alt="Planet-Mars-Project">
-              <div class="project-overlay">
-                <h1>Planet Mars Project</h1>
-                <p>I designed planet mars project using HTML and CSS. </p>
-                <div class="technology">
-                  <p>HTML5</p>
-                  <p>CSS</p>
-                  
-                </div>
-                  <div class="githublinks">
-                    <a href="https://github.com/Jayakodehode/Planet-Mars-Project.git" target="_blank">Github Repo</a>
-                    <a href="https://jayakodehode.github.io/Planet-Mars-Project/" target="_blank">Github live</a>
-                  </div>
 
-              </div>
-            </div>
-
-
-
-
-
-            <!--  ****** project 2 ******  -->
+            <!--  ****** project 1 ******  -->
             <div class="project-wrap">
               <img src="./images/NewsHomepage.webp" alt="NewsHomepage">
               <div class="project-overlay">
@@ -217,7 +278,7 @@
               </div>
             </div>
 
-            <!--  ****** project 3 ******  -->
+            <!--  ****** project 2 ******  -->
             <div class="project-wrap">
               <img src="./images/Todo-list.webp" alt="TodoList">
               <div class="project-overlay">
@@ -239,7 +300,7 @@
 
 
 
-            <!--  ****** project 4 ******  -->
+            <!--  ****** project 3 ******  -->
             <div class="project-wrap">
               <img src="./images/Tic-Tac-Toe Game.webp" alt="Tic-Tac-Toe-game">
               <div class="project-overlay">
@@ -259,7 +320,7 @@
             </div>
 
 
-            <!--  ****** project 5 ******  -->
+            <!--  ****** project 4 ******  -->
             <div class="project-wrap">
               <img src="./images/Calculater.png" alt="Calculater App">
               <div class="project-overlay">
@@ -279,6 +340,28 @@
 
               </div>
             </div>
+
+
+
+             <!--  ****** project 5 ******  -->
+             <div class="project-wrap">
+              <img src="./images/Planet-Mars-Project .webp" alt="Planet-Mars-Project">
+              <div class="project-overlay">
+                <h1>Planet Mars Project</h1>
+                <p>I designed planet mars project using HTML and CSS. </p>
+                <div class="technology">
+                  <p>HTML5</p>
+                  <p>CSS</p>
+                  
+                </div>
+                  <div class="githublinks">
+                    <a href="https://github.com/Jayakodehode/Planet-Mars-Project.git" target="_blank">Github Repo</a>
+                    <a href="https://jayakodehode.github.io/Planet-Mars-Project/" target="_blank">Github live</a>
+                  </div>
+
+              </div>
+            </div>
+
 
             <!--  ****** project 6 ******  -->
             <div class="project-wrap">
@@ -301,6 +384,8 @@
             </div>
 
           
+
+
            
 
 
